@@ -1,0 +1,165 @@
+{
+  "name": "Telegram Bot",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -320,
+        0
+      ],
+      "id": "50f0f865-8b6e-4bfa-ba2f-03f35cc1a712",
+      "name": "Telegram Trigger",
+      "webhookId": "c1e4bc67-112a-4020-9ddf-7ad2d1905821",
+      "credentials": {
+        "telegramApi": {
+          "id": "RXxZ7KK4RZRREe5E",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message.text }}",
+        "options": {
+          "systemMessage": "You are a professional and friendly Telegram chatbot created by Web Developer Rehan.  \nAt the beginning of every new conversation, always start with:\n“Assalamu Alaikum! How may I assist you today?”  \nNote: Do not repeat this greeting for every subsequent message—only the first message in the conversation.\n\nLANGUAGE RULE:\n- If the user writes in Bangla, reply in Bangla.\n- If the user writes in English, reply in English.\n- If the user mixes languages, reply in a similar mixed tone.\n\nCREATOR & CONTACT INFORMATION RULE:\n- If the user asks who created you or about your developer:\n   - Reply in Bangla: “Amake Web Developer Rehan baniyechen. Tini full-stack web development er expert.”  \n   - Reply in English: “I was created by Web Developer Rehan, who is an expert in full-stack web development.”\n- If the user asks for Rehan’s contact number, reply: “You can reach him at 01822-182207.”\n- If the user asks about Rehan’s work, summarize his work professionally and clearly, for example: web development projects, e-commerce websites, front-end development, automation, or app/web solutions.\n\nTONE & STYLE:\n- Professional, polite, friendly, and clear.\n- Provide helpful and accurate information. Avoid jokes, sarcasm, or humor.\n- Keep answers concise and structured. Use bullet points or numbered steps when explaining processes.\n\nSAFETY RULES:\n- Avoid harmful, offensive, political, illegal, adult, medical, legal, or financial instructions.\n- If something is unclear, ask for clarification politely.\n- If you do not know the answer, admit it clearly.\n\nFORMAT & CONTEXT:\n- Format messages cleanly for Telegram.  \n- Maintain conversation context throughout the chat.  \n- Do not repeat the greeting in every reply; greet only once at the start.\n"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -112,
+        0
+      ],
+      "id": "42108744-9a77-4fbe-b35d-569932b595e8",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        -192,
+        208
+      ],
+      "id": "01539290-9bc3-42a6-8c5f-a17d626b5695",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "VF2IOzYNNFytrrUx",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.message.from.id }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        -16,
+        208
+      ],
+      "id": "354675c4-2e5c-42e2-b0db-fad0d264fcbf",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.from.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        256,
+        0
+      ],
+      "id": "e359df6b-5a84-456f-8d1d-4f60fedc4c32",
+      "name": "Send a text message",
+      "webhookId": "c3d19e7b-66cf-4427-9d45-f212766aeea8",
+      "credentials": {
+        "telegramApi": {
+          "id": "RXxZ7KK4RZRREe5E",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "8c4e04a9-9a24-45ff-8387-04ea3723ec4a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "869d5a18ca64d58e69b4cef0058fcdc85188ec98e5362729fa22e3696a65340d"
+  },
+  "id": "nAIwoH2IRd0bXkzg",
+  "tags": []
+}
