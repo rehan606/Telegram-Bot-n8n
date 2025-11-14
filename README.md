@@ -45,7 +45,7 @@ Avoids political, harmful, explicit, illegal, medical, or unsafe content.
 | Hosting | n8n Cloud / Self-hosted |
 
 ---
-
+```
 ## 🗂️ Project Structure
 
 Telegram-Bot-n8n/
@@ -56,6 +56,7 @@ Telegram-Bot-n8n/
 ├── README.md
 └── assets/ (optional)
 
+```
 
 ---
 
