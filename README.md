@@ -1,6 +1,9 @@
 # 📌 Telegram-Bot-n8n  
-A professional and friendly AI-powered Telegram chatbot built using **n8n**, **OpenAI**, and **Telegram Bot API**.  
-The bot supports **text and voice messages**, provides multi-language responses, and includes personalized system logic powered by Web Developer **Rehan**.
+
+*Name*: RehanChat
+
+A professional and friendly AI-powered Telegram chatbot Name *RehanChat* was built using **n8n**  automation workflows, **OpenAI** AI models, and **Telegram Bot API**.
+The bot is designed to interact with users in a professional and friendly manner, providing helpful responses in both Bangla and English. It can understand and respond to **text messages**, provides multi-language responses, and includes personalized system logic powered by Web Developer **Rehan**.
 
 ---
 
@@ -20,7 +23,8 @@ Converts Telegram voice messages into text via **OpenAI Whisper**, then replies 
 Provides clean, polite, helpful responses suitable for real users or customer support.
 
 ### ✔️ Custom System Behavior  
-- Sends **“Assalamu Alaikum! How may I assist you today?”** only at the start of a conversation  
+- Includes personalized system rules to handle greetings, creator info, and contact information professionally.
+- Sends **“Assalamu Alaikum! How may I assist you today?”** only at the start of a conversation
 - Shares developer info when asked  
 - Provides developer contact number upon request  
 - Describes developer skills in a professional way  
