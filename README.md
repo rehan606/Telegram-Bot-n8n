@@ -50,9 +50,7 @@ Avoids political, harmful, explicit, illegal, medical, or unsafe content.
 
 Telegram-Bot-n8n/
 │
-├── workflows/
-│ └── telegram-bot-workflow.json
-│
+├── telegram-bot-workflow.json
 ├── README.md
 └── assets/ (optional)
 
