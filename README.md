@@ -6,6 +6,11 @@ A professional and friendly AI-powered Telegram chatbot Name **RehanChat** was b
 The bot is designed to interact with users in a professional and friendly manner, providing helpful responses in both Bangla and English. It can understand and respond to **text messages**, provides multi-language responses, and includes personalized system logic powered by Web Developer **Rehan**.
 
 ---
+## Live Chat with Rehan Chat Bot
+<a href="https://t.me/RehanChatBot"> RehanChat Bot </a>
+---
+
+---
 
 ## Project Image
 <a href="https://ibb.co.com/VcfH8XkG"><img src="https://i.ibb.co.com/wF5J1D2q/image.png" alt="image" border="0"></a>
