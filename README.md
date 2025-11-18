@@ -2,15 +2,14 @@
 
 **Bot Name** : RehanChat
 
-A professional and friendly AI-powered Telegram chatbot Name **RehanChat** was built using **n8n**  automation workflows, **OpenAI** AI models, and **Telegram Bot API**.
+A professional and friendly AI-powered Telegram chatbot, Name **RehanChat**, was built using **n8n**  automation workflows, **OpenAI** AI models, and **Telegram Bot API**.
 The bot is designed to interact with users in a professional and friendly manner, providing helpful responses in both Bangla and English. It can understand and respond to **text messages**, provides multi-language responses, and includes personalized system logic powered by Web Developer **Rehan**.
 
 ---
-## Live Chat with Rehan Chat Bot
+### Live Chat with Rehan Chat Bot
 <a href="https://t.me/RehanChatBot"> RehanChat Bot </a>
 ---
 
----
 
 ## Project Image
 <a href="https://ibb.co.com/VcfH8XkG"><img src="https://i.ibb.co.com/wF5J1D2q/image.png" alt="image" border="0"></a>
