@@ -6,7 +6,7 @@ A professional and friendly AI-powered Telegram chatbot, Name **RehanChat**, was
 The bot is designed to interact with users in a professional and friendly manner, providing helpful responses in both Bangla and English. It can understand and respond to **text messages**, provides multi-language responses, and includes personalized system logic powered by Web Developer **Rehan**.
 
 ---
-### Live Chat with Rehan Chat Bot
+### ✔️ Live Chat with Rehan Chat Bot
 <a href="https://t.me/RehanChatBot"> RehanChat Bot </a>
 ---
 
@@ -74,10 +74,10 @@ Receives text or voice messages from Telegram users.
 Voice file → **OpenAI Whisper** → Extracted text.
 
 ### 3️⃣ AI Agent Processing  
-Extracted or typed user text is processed using OpenAI Chat model with custom system instructions.
+Extracted or typed user text is processed using the OpenAI Chat model with custom system instructions.
 
 ### 4️⃣ Response Delivery  
-Bot sends a structured, professional reply back to the Telegram user.
+The bot sends a structured, professional reply back to the Telegram user.
 
 ---
 
@@ -110,7 +110,7 @@ Bot sends a structured, professional reply back to the Telegram user.
 ---
 
 ### **Step 3: Activate the Workflow**
-Turn on the workflow and start chatting with your Telegram bot.
+Activate the workflow and begin chatting with your Telegram bot.
 
 ---
 
@@ -120,7 +120,7 @@ Turn on the workflow and start chatting with your Telegram bot.
   **“Assalamu Alaikum! How may I assist you today?”**
 - If asked: *“Who created you?”*  
   - **Bangla:** “Amake Web Developer Rehan baniyechen.”  
-  - **English:** “I was created by Web Developer Rehan.”
+  - **English:** “Web Developer Rehan created me.”
 - If asked for Rehan’s contact:  
   **01822-182207**
 - If asked about Rehan:  
