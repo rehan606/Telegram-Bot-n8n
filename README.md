@@ -10,7 +10,6 @@ The bot is designed to interact with users in a professional and friendly manner
 <a href="https://t.me/RehanChatBot"> RehanChat Bot </a>
 ---
 
-
 ## Project Image
 <a href="https://ibb.co.com/VcfH8XkG"><img src="https://i.ibb.co.com/wF5J1D2q/image.png" alt="image" border="0"></a>
 
