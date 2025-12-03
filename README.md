@@ -109,7 +109,7 @@ The bot sends a structured, professional reply back to the Telegram user.
 ---
 
 ### **Step 3: Activate the Workflow**
-Activate the workflow and begin chatting with your Telegram bot.
+You can activate the workflow and begin chatting with your Telegram bot.
 
 ---
 
@@ -144,4 +144,4 @@ Expert in full-stack web development, e-commerce websites, front-end solutions, 
 Pull requests are welcome!  
 If you have any feature requests or issues, you can open a GitHub issue.
 
-## Thank You 
+## Thank You !
