@@ -38,7 +38,6 @@ Provides clean, polite, helpful responses suitable for real users or customer su
 Avoids political, harmful, explicit, illegal, medical, or unsafe content.
 
 ---
-
 ## 🧠 Tech Stack
 
 | Component | Technology |
