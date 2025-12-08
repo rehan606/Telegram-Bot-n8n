@@ -14,7 +14,6 @@ The bot is designed to interact with users in a professional and friendly manner
 <a href="https://ibb.co.com/VcfH8XkG"><img src="https://i.ibb.co.com/wF5J1D2q/image.png" alt="image" border="0"></a>
 
 ## 🚀 Features
-
 ### ✔️ AI-Powered Conversations  
 Generates intelligent and contextual responses using OpenAI Chat models.
 
