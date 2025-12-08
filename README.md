@@ -135,7 +135,7 @@ Feel free to modify and improve.
 ---
 
 ## 👤 Developer  
-**Web Developer Rehan**  
+**Web Developer Rehan khan**  
 Expert in full-stack web development, e-commerce websites, front-end solutions, and automation workflows.  
 📞 Contact: **01822-182207**
 
