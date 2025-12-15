@@ -95,6 +95,7 @@ The bot sends a structured, professional reply back to the Telegram user.
 
 ---
 
+
 ### **Step 2: Configure Credentials**
 
 #### **Telegram**
